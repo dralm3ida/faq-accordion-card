@@ -1,0 +1,65 @@
+.faq {
+   max-width: 20.5rem; // 328px
+   max-height: 33.5rem; // 536px
+   width: 90%;
+   height: 66%;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   margin: auto;
+   padding: 0px 25px 0 25px;
+   border-radius: 15px;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+   background-color: $white;
+
+   &-images {
+      max-height: 6.625rem; // 106px
+      &-pattern {
+         background-image: url('../../images/bg-pattern-mobile.svg');
+         background-size: auto;
+         background-repeat: no-repeat;
+         background-position-x: center;
+         min-height: 9.0625rem; // 145px
+      }
+
+      &-women {
+         background-image: url('../../images/illustration-woman-online-mobile.svg');
+         background-size: auto;
+         background-repeat: no-repeat;
+         background-position-x: 26%;
+         min-height: 12.25rem; // 196px
+         transform: translateX(5%);
+         transform: translateY(-129%);
+      }
+   }
+
+   &-content {
+
+      .faq-item {
+         
+         padding: 20px 0px 20px 0px;
+
+         a {
+            color: $veryDarkGrayishBlue;
+            text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+
+            .icon-arrow {
+               float: right;
+               height: 0.9375rem;
+               width: 0.9375rem;
+               margin-left: 15px;
+               background-image: url('../../images/icon-arrow-down.svg');
+               background-size: auto;
+               background-repeat: no-repeat;
+               background-position: center center;
+            }
+         }
+
+      }
+
+   }
+
+}
+
+// svg {
+//    transform: rotate(180deg);
+//  }

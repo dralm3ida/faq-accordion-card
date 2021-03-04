@@ -1,0 +1,101 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #6565e7, #af67e9);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  display: none;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #787887;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #e7e7e9;
+  opacity: 0.2;
+}
+
+.faq {
+  max-width: 20.5rem;
+  max-height: 33.5rem;
+  width: 90%;
+  height: 66%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 0px 25px 0 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+}
+
+.faq-images {
+  max-height: 6.625rem;
+}
+
+.faq-images-pattern {
+  background-image: url("../../images/bg-pattern-mobile.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  min-height: 9.0625rem;
+}
+
+.faq-images-women {
+  background-image: url("../../images/illustration-woman-online-mobile.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: 26%;
+  min-height: 12.25rem;
+  transform: translateX(5%);
+  transform: translateY(-129%);
+}
+
+.faq-content .faq-item {
+  padding: 20px 0px 20px 0px;
+}
+
+.faq-content .faq-item a {
+  color: #4a4b5e;
+  text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.faq-content .faq-item a .icon-arrow {
+  float: right;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  margin-left: 15px;
+  background-image: url("../../images/icon-arrow-down.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*# sourceMappingURL=styles.css.map */

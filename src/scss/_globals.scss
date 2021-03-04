@@ -1,0 +1,41 @@
+html {
+   font-size: 100%;
+   box-sizing: border-box;
+}
+
+*, *::before, *::after{
+   box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
+   background-image: linear-gradient(to top, $softBlue, $softViolet);
+   font-family: 'Kumbh Sans', sans-serif;
+   font-weight: 400;
+   font-size: $font-md;
+   overflow-x: hidden;
+}
+
+h1 {
+   font-weight: 700;
+   font-size: $font-lg;
+   text-align: center;
+}
+
+p {
+   display: none;
+   padding-right: 30px;
+   font-weight: 400;
+   font-size: $font-sm;
+   color: $darkGrayishBlue;
+}
+
+hr {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   color: $lightGrayishBlue;
+   opacity: 0.2;
+}
