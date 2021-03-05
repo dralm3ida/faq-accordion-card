@@ -1,0 +1,6 @@
+// mixin directive up
+@mixin break-up($value) {
+   @media (min-width: $value){
+      @content;
+   }
+}

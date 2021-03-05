@@ -22,6 +22,10 @@ h1 {
    font-weight: 700;
    font-size: $font-lg;
    text-align: center;
+
+   @include break-up($break-value){
+      text-align: left;
+   }
 }
 
 p {

@@ -24,6 +24,12 @@ h1 {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  h1 {
+    text-align: left;
+  }
+}
+
 p {
   display: none;
   padding-right: 30px;
@@ -51,17 +57,34 @@ hr {
   bottom: 0;
   left: 0;
   margin: auto;
-  padding: 0px 25px 0 25px;
+  padding: 0rem 1.5625rem 0rem 1.5625rem;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   background-color: #FFFFFF;
+}
+
+@media (min-width: 64em) {
+  .faq {
+    max-width: 57.5rem;
+    max-height: 31.875rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .faq-images {
   max-height: 6.625rem;
 }
 
-.faq-images-pattern {
+@media (min-width: 64em) {
+  .faq-images {
+    flex: 1;
+  }
+}
+
+.faq-images-pattern-mobile {
+  position: relative;
   background-image: url("../../images/bg-pattern-mobile.svg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -69,7 +92,48 @@ hr {
   min-height: 9.0625rem;
 }
 
-.faq-images-women {
+@media (min-width: 64em) {
+  .faq-images-pattern-mobile {
+    display: none;
+  }
+}
+
+.faq-images-pattern-desktop {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .faq-images-pattern-desktop {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    min-height: 50.0625rem;
+    min-width: 103%;
+    transform: translateY(-62%);
+  }
+}
+
+.faq-images-box-desktop {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .faq-images-box-desktop {
+    ddisplay: block;
+    background-image: url("../../images/illustration-box-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 12.25rem;
+    background-position-x: 100%;
+    transform: translateY(-55%);
+  }
+}
+
+.faq-images-women-mobile {
   background-image: url("../../images/illustration-woman-online-mobile.svg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -77,6 +141,36 @@ hr {
   min-height: 12.25rem;
   transform: translateX(5%);
   transform: translateY(-129%);
+}
+
+@media (min-width: 64em) {
+  .faq-images-women-mobile {
+    display: none;
+  }
+}
+
+.faq-images-women-desktop {
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .faq-images-women-desktop {
+    display: block;
+    background-image: url("../../images/illustration-woman-online-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    min-height: 30.0625rem;
+    min-width: 103%;
+    transform: translateY(-193%);
+  }
+}
+
+@media (min-width: 64em) {
+  .faq-content {
+    padding: 0rem 5.625rem 0.625rem 5.625rem;
+    flex: 1;
+  }
 }
 
 .faq-content .faq-item {

@@ -6,22 +6,72 @@
    position: absolute;
    top: 0; right: 0; bottom: 0; left: 0;
    margin: auto;
-   padding: 0px 25px 0 25px;
+   padding: 0rem 1.5625rem 0rem 1.5625rem;
    border-radius: 15px;
    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
    background-color: $white;
 
+   @include break-up($break-value){
+      max-width: 57.5rem; // 920px
+      max-height: 31.875rem; // 510px
+      padding: 0;
+      display: flex;
+      align-items: center;
+   }
+
    &-images {
+
       max-height: 6.625rem; // 106px
-      &-pattern {
+
+      @include break-up($break-value){
+         flex: 1;
+      }
+
+      &-pattern-mobile {
+         position: relative;
          background-image: url('../../images/bg-pattern-mobile.svg');
          background-size: auto;
          background-repeat: no-repeat;
          background-position-x: center;
          min-height: 9.0625rem; // 145px
+
+         @include break-up($break-value){
+            display: none;
+         }
       }
 
-      &-women {
+      &-pattern-desktop {
+         display: none;
+
+         @include break-up($break-value){
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url('../../images/bg-pattern-desktop.svg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            min-height: 50.0625rem;
+            min-width: 103%;
+            transform: translateY(-62%);
+         }
+      }
+
+      &-box-desktop {
+         display: none;
+
+         @include break-up($break-value){
+            ddisplay: block;
+            background-image: url('../../images/illustration-box-desktop.svg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            min-height: 12.25rem; // 196px
+            background-position-x: 100%;
+            transform: translateY(-55%);
+         }
+      }
+
+      &-women-mobile {
          background-image: url('../../images/illustration-woman-online-mobile.svg');
          background-size: auto;
          background-repeat: no-repeat;
@@ -29,10 +79,34 @@
          min-height: 12.25rem; // 196px
          transform: translateX(5%);
          transform: translateY(-129%);
+
+         @include break-up($break-value){
+            display: none;
+         }
+      }
+
+      &-women-desktop {
+         display: none;
+
+         @include break-up($break-value){
+            display: block;
+            background-image: url('../../images/illustration-woman-online-desktop.svg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            min-height: 30.0625rem;
+            min-width: 103%;
+            transform: translateY(-193%);
+         }
       }
    }
 
    &-content {
+
+      @include break-up($break-value){
+         padding: 0rem 5.625rem 0.625rem 5.625rem;
+         flex: 1;
+      }
 
       .faq-item {
          
@@ -53,9 +127,7 @@
                background-position: center center;
             }
          }
-
       }
-
    }
 
 }
