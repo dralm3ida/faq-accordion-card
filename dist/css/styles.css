@@ -58,9 +58,13 @@ hr {
   left: 0;
   margin: auto;
   padding: 0rem 1.5625rem 0rem 1.5625rem;
+  background-color: #FFFFFF;
+  background-image: url("../../images/bg-pattern-mobile.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
-  background-color: #FFFFFF;
 }
 
 @media (min-width: 64em) {
@@ -70,105 +74,52 @@ hr {
     padding: 0;
     display: flex;
     align-items: center;
-  }
-}
-
-.faq-images {
-  max-height: 6.625rem;
-}
-
-@media (min-width: 64em) {
-  .faq-images {
-    flex: 1;
-  }
-}
-
-.faq-images-pattern-mobile {
-  position: relative;
-  background-image: url("../../images/bg-pattern-mobile.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  min-height: 9.0625rem;
-}
-
-@media (min-width: 64em) {
-  .faq-images-pattern-mobile {
-    display: none;
-  }
-}
-
-.faq-images-pattern-desktop {
-  display: none;
-}
-
-@media (min-width: 64em) {
-  .faq-images-pattern-desktop {
-    content: "";
-    display: block;
-    position: absolute;
     background-image: url("../../images/bg-pattern-desktop.svg");
     background-size: auto;
     background-repeat: no-repeat;
-    background-position-x: 100%;
-    min-height: 50.0625rem;
-    min-width: 103%;
-    transform: translateY(-62%);
+    background-position-x: -37.25rem;
+    background-position-y: 68%;
   }
 }
 
-.faq-images-box-desktop {
-  display: none;
-}
-
-@media (min-width: 64em) {
-  .faq-images-box-desktop {
-    ddisplay: block;
-    background-image: url("../../images/illustration-box-desktop.svg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    min-height: 12.25rem;
-    background-position-x: 100%;
-    transform: translateY(-55%);
-  }
-}
-
-.faq-images-women-mobile {
+.faq-illustration-women {
   background-image: url("../../images/illustration-woman-online-mobile.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position-x: 26%;
-  min-height: 12.25rem;
-  transform: translateX(5%);
-  transform: translateY(-129%);
+  background-position-x: -60%;
+  min-height: 11.25rem;
+  transform: translateY(-60%);
 }
 
 @media (min-width: 64em) {
-  .faq-images-women-mobile {
-    display: none;
-  }
-}
-
-.faq-images-women-desktop {
-  display: none;
-}
-
-@media (min-width: 64em) {
-  .faq-images-women-desktop {
-    display: block;
+  .faq-illustration-women {
+    min-height: 30.0625rem;
+    flex: 1;
     background-image: url("../../images/illustration-woman-online-desktop.svg");
     background-size: auto;
     background-repeat: no-repeat;
     background-position-x: 100%;
-    min-height: 30.0625rem;
-    min-width: 103%;
-    transform: translateY(-193%);
+    transform: translateY(12%);
   }
+  .faq-illustration-women::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 110px;
+    background-image: url("../../images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    transform: translate(-94px, 132px);
+  }
+}
+
+.faq-content {
+  transform: translateY(-20%);
 }
 
 @media (min-width: 64em) {
   .faq-content {
-    padding: 0rem 5.625rem 0.625rem 5.625rem;
+    transform: none;
+    padding: 0rem 5rem 0.625rem 5rem;
     flex: 1;
   }
 }
