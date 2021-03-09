@@ -1,8 +1,8 @@
 .faq {
-   max-width: 20.5rem; // 328px
+   max-width: 21.5rem; // 344px
    max-height: 33.5rem; // 536px
    width: 90%;
-   height: 66%;
+   height: 75%;
    position: absolute;
    top: 0; right: 0; bottom: 0; left: 0;
    margin: auto;
@@ -32,7 +32,7 @@
       background-image: url('../../images/illustration-woman-online-mobile.svg');
       background-size: auto;
       background-repeat: no-repeat;
-      background-position-x: -60%;
+      background-position-x: -10%;
       min-height: 11.25rem; // 196px
       transform: translateY(-60%);
 
@@ -58,8 +58,9 @@
    }
 
    &-content {
-
-      transform: translateY(-20%);
+      height: 70%;
+      overflow-y: auto;
+      transform: translateY(-15%);
 
       @include break-up($break-value){
          transform: none;
@@ -69,28 +70,48 @@
 
       .faq-item {
          
-         padding: 20px 0px 20px 0px;
+         padding: 0.625rem 0rem 0.625rem 0rem;
 
-         a {
+         &-link {
+            padding: 0.3125rem;
             color: $veryDarkGrayishBlue;
             text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+
+            @include break-up($break-value){
+               cursor: pointer;
+
+               &:hover {
+                  color: $softRed;
+               }
+            }
 
             .icon-arrow {
                float: right;
                height: 0.9375rem;
                width: 0.9375rem;
-               margin-left: 15px;
+               margin-left: 0.9375; // 15px
                background-image: url('../../images/icon-arrow-down.svg');
                background-size: auto;
                background-repeat: no-repeat;
                background-position: center center;
             }
          }
+
+         p {
+            display: none;
+         }
+
+         .open {
+            display: block;
+         }
+
+         .bold {
+            font-weight: 700;
+         }
+
+         .rotate {
+            transform: rotate(180deg);
+         }
       }
    }
-
 }
-
-// svg {
-//    transform: rotate(180deg);
-//  }

@@ -31,8 +31,8 @@ h1 {
 }
 
 p {
-  display: none;
-  padding-right: 30px;
+  padding-right: 1.875px;
+  padding-left: 0.3125rem;
   font-weight: 400;
   font-size: 0.75rem;
   color: #787887;
@@ -47,10 +47,10 @@ hr {
 }
 
 .faq {
-  max-width: 20.5rem;
+  max-width: 21.5rem;
   max-height: 33.5rem;
   width: 90%;
-  height: 66%;
+  height: 75%;
   position: absolute;
   top: 0;
   right: 0;
@@ -86,7 +86,7 @@ hr {
   background-image: url("../../images/illustration-woman-online-mobile.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position-x: -60%;
+  background-position-x: -10%;
   min-height: 11.25rem;
   transform: translateY(-60%);
 }
@@ -113,7 +113,9 @@ hr {
 }
 
 .faq-content {
-  transform: translateY(-20%);
+  height: 70%;
+  overflow-y: auto;
+  transform: translateY(-15%);
 }
 
 @media (min-width: 64em) {
@@ -125,22 +127,48 @@ hr {
 }
 
 .faq-content .faq-item {
-  padding: 20px 0px 20px 0px;
+  padding: 0.625rem 0rem 0.625rem 0rem;
 }
 
-.faq-content .faq-item a {
+.faq-content .faq-item-link {
+  padding: 0.3125rem;
   color: #4a4b5e;
   text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
 }
 
-.faq-content .faq-item a .icon-arrow {
+@media (min-width: 64em) {
+  .faq-content .faq-item-link {
+    cursor: pointer;
+  }
+  .faq-content .faq-item-link:hover {
+    color: #f47c57;
+  }
+}
+
+.faq-content .faq-item-link .icon-arrow {
   float: right;
   height: 0.9375rem;
   width: 0.9375rem;
-  margin-left: 15px;
+  margin-left: 0.9375;
   background-image: url("../../images/icon-arrow-down.svg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.faq-content .faq-item p {
+  display: none;
+}
+
+.faq-content .faq-item .open {
+  display: block;
+}
+
+.faq-content .faq-item .bold {
+  font-weight: 700;
+}
+
+.faq-content .faq-item .rotate {
+  transform: rotate(180deg);
 }
 /*# sourceMappingURL=styles.css.map */
