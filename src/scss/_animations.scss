@@ -1,0 +1,42 @@
+@keyframes open-item {
+   from {
+      opacity: 0;
+      height: 0;
+      margin: 0;
+   }
+   to {
+      opacity: 1;
+      height: auto;
+      margin: 0.75rem 0rem 0.75rem 0rem;
+   }
+}
+
+// @keyframes close-item {
+//    from {
+//       display: block;
+//       opacity: 1;
+//       height: auto;
+//       margin: 0.75rem 0rem 0.75rem 0rem;
+//    }
+//    99% {
+//       display: block;
+//       opacity: 0;
+//       height: 0;
+//       margin: 0;
+//    }
+//    to {
+//       display: none;
+//    }
+// }
+
+@keyframes rotate-arrow {
+   to {
+      transition: 300ms ease-in-out;
+   }
+}
+
+@keyframes jumping-box {
+   to {
+      transform: translate(-94px, 122px);
+   }
+}
